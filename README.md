@@ -3,7 +3,7 @@
 The script implements a simple method for German compound splitting that combines a basic frequency-based approach with a form-to-lemma mapping to approximate morphological operations.
 
 Have a look at my paper for more details:
-[Simple Compound splitting for German](https://www.aclweb.org/anthology/W17-1722/)
+[Simple Compound splitting for German (2017)](https://www.aclweb.org/anthology/W17-1722/)
 
 ## Run the splitter
 
