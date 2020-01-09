@@ -75,7 +75,7 @@ To prepare these lists, you need to first POS-tag and lemmatize your training da
 
 ### 1) all_pos_freq.txt: frequency list
 
-Lemma | POS-tag | frequency
+Lemma|POS-tag|frequency
 ------|---------|----------
 schwankung  |    NN   |   336 
 mühle |  NN  |    454  
@@ -93,7 +93,7 @@ can occur frequently due to typos or incorrect hyphenation and it can help to re
 
 ### 2) all_pos_lem.txt: list of word forms and their respective lemma 
 
-Word form | POS-tag | Lemma
+Word form|POS-tag|Lemma
 ----------|---------|------
 schwankung   |   NN   |   schwankung
 schwankungen |   NN  |    schwankung
@@ -136,8 +136,8 @@ in the modifier position.
     hain (grove) -> remove "n" -> hai (shark) 
 
 * Adding "e": \
-  **  reis (rice) -> add "e" -> reise (voyage) \
-  **  nicht (not) -> add "e" -> nichte (niece)
+    reis (rice) -> add "e" -> reise (voyage) \
+    nicht (not) -> add "e" -> nichte (niece)
 
 This list is not complete; some of the entries occur rather frequently, e.g. "nicht" (negation prefix).
 
