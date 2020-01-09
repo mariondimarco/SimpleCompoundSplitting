@@ -1,8 +1,13 @@
 # Simple Compound Splitting for German
 
+
+## Run the splitter
+
 The splitter is started as follows:
 perl compound_splitter_DE.perl input_file.txt > output_file.txt
 
+
+### Input format 
 The input-file should look like this:
 compound <tab> POS-tag (ADJ, NN, V)
 
@@ -17,8 +22,7 @@ see below for more details.
 
 You can also use use optional output options, see below.
 
-
-*** OUTPUT ***
+### Output format
 
 The output looks like this:
 
@@ -33,7 +37,7 @@ noun (breit_ADJ flügel_NN fledermäuse_NN); the modifiers are represented in le
 This can be useful, e.g. for applications in SMT, if you want to keep information such as number.
 
 
-*** OPTIONS ***
+## Options 
 
 You can select different output options:
 
@@ -50,7 +54,7 @@ Set to 0 (default) in order to force the splitter to output a split form as 'bes
 Restricts the number of components: if set to 2, only analyses with 2 components will be shown.
 
 
-*** METHOD ***
+## Method
 Each compound is split in up to 4 components of the categories noun, verb or adjective,
 particle/preposition, adverb and proper noun.
 The category of the compound (head word), which is part of the input, cannot be changed.
@@ -59,7 +63,7 @@ order to rate the different splitting analyses and to identify the best analysis
 (-> see Koehn/Knight 2003: "Empirical Methods for Compound Splitting").
 
 
-*** DATA ***
+## Training data
 
 The splitter loads two lists: "all_pos_freq.txt" and "all_pos_lem.txt"
 You need to set the correct path in line 34.
@@ -110,7 +114,6 @@ tütensuppe -> tüte suppe (lit. bag soup: packet soup)
 Both lists should be as large and clean as possible.
 
 
-*** EXTRA ***
 
 1) %ignore: stop words
 you can add words that should not be be part of the splitting analysis.
