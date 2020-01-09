@@ -12,12 +12,12 @@ perl compound_splitter_DE.perl input_file.txt > output_file.txt
 
 
 ### Input format 
-The input-file should look like this: \newline
-compound *tab* POS-tag (ADJ, NN, V) \newline
+The input-file should look like this: \
+compound *tab* POS-tag (ADJ, NN, V) \
 
-Abfallkatalog   NN \newline
-Abfallmenge     NN \newline
-Abfallprodukte  NN \newline
+Abfallkatalog   NN \
+Abfallmenge     NN \
+Abfallprodukte  NN \
 
 (Either true-cased or lower-cased: the splitter will lowercase everything)
 
