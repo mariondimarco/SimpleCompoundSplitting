@@ -15,6 +15,7 @@ perl compound_splitter_DE.perl input_file.txt > output_file.txt
 The input-file should look like this: \
 compound *tab* POS-tag (ADJ, NN, V) 
 
+x | y
 ---------------|----------
 Abfallkatalog  |  NN 
 Abfallmenge    |  NN 
