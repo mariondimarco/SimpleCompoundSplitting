@@ -132,6 +132,8 @@ To be edited directly in the splitting script.
 * **dont_modify:** words for which certain operations are forbidden \
     you can add words that look like other (non-related) words when a fugenelement is removed/added in the modifier position.
 
+    Examples:
+    
     - Removal of "s" or "n": \
         eis (ice) -> remove "s" -> ei (egg) \
         hain (grove) -> remove "n" -> hai (shark) 
@@ -140,5 +142,5 @@ To be edited directly in the splitting script.
         reis (rice) -> add "e" -> reise (voyage) \
         nicht (not) -> add "e" -> nichte (niece)
 
-This list is not complete; some of the entries occur rather frequently, e.g. "nicht" (negation prefix).
+    This list is not complete; some of the entries occur rather frequently, e.g. "nicht" (negation prefix).
 
