@@ -31,8 +31,9 @@ The output looks like this:
 
 compound *tab* split compound (all lemmatized) *tab* split compound (inflected head)
 
-breitflügelfledermäuse  breit_ADJ flügel_NN fledermaus_NN   breit_ADJ flügel_NN fledermäuse_NN \
-breitflügelfledermaus    breit_ADJ flügel_NN fledermaus_NN   breit_ADJ flügel_NN fledermaus_NN
+breitflügelfledermäuse |  breit_ADJ flügel_NN fledermaus_NN  | breit_ADJ flügel_NN fledermäuse_NN 
+---|------------|-----
+breitflügelfledermaus   | breit_ADJ flügel_NN fledermaus_NN   | breit_ADJ flügel_NN fledermaus_NN
 
 The first word (breitflügelfledermäuse) is the plural form; the splitter outputs a lemmatized analysis
 (breit_ADJ flügel_NN fledermaus_NN), as well as an analysis that keeps the inflected form of the head
@@ -75,7 +76,7 @@ To prepare these lists, you need to first POS-tag and lemmatize your training da
 
 ### 1) all_pos_freq.txt: frequency list
 
-Lemma|POS-tag|frequency
+:Lemma|:POS-tag|:frequency
 ------|---------|----------
 schwankung  |    NN   |   336 
 mühle |  NN  |    454  
