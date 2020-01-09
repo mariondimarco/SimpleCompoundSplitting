@@ -31,7 +31,7 @@ The output looks like this:
 
 compound *tab* split compound (all lemmatized) *tab* split compound (inflected head)
 
-Compound | analysis - all lemmatized | analysis - inflected head
+Compound | analysis  (all components lemmatized) | analysis (inflected head)
 |----|-------|-------
 |breitflügelfledermäuse |  breit_ADJ flügel_NN fledermaus_NN  | breit_ADJ flügel_NN fledermäuse_NN 
 |breitflügelfledermaus   | breit_ADJ flügel_NN fledermaus_NN   | breit_ADJ flügel_NN fledermaus_NN
@@ -78,7 +78,7 @@ To prepare these lists, you need to first POS-tag and lemmatize your training da
 ### 1) all_pos_freq.txt: frequency list
 
 |Lemma|POS-tag|frequency
-|------|---------|----------
+|:------|---------|----------
 |schwankung  |    NN   |   336 
 |mühle |  NN  |    454  
 |mobil |  ADJ   |  749 
@@ -95,16 +95,16 @@ can occur frequently due to typos or incorrect hyphenation and it can help to re
 
 ### 2) all_pos_lem.txt: list of word forms and their respective lemma 
 
-Word form|POS-tag|Lemma
-----------|---------|------
-schwankung   |   NN   |   schwankung
-schwankungen |   NN  |    schwankung
-mobiles	|	ADJ	| mobil
-mobiler	|	ADJ |	mobil
-fledermäuse |    NN  |     fledermaus
-anzeigen  |    V   |    anzeigen
-bücher  |	NN    |  buch
-tüten	|	NN	| tüte
+|Word form|POS-tag|Lemma
+|:----------|---------|------
+|schwankung   |   NN   |   schwankung
+|schwankungen |   NN  |    schwankung
+|mobiles	|	ADJ	| mobil
+|mobiler	|	ADJ |	mobil
+|fledermäuse |    NN  |     fledermaus
+|anzeigen  |    V   |    anzeigen
+|bücher  |	NN    |  buch
+|tüten	|	NN	| tüte
 
 This list maps word forms to their lemma.
 The format is: word *tab* POS-tag *tab* lemma.
