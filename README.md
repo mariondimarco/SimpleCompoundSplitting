@@ -121,19 +121,21 @@ Both lists should be as large and clean as possible.
 
 ## Additional options
 
-**1) %ignore: stop words**
+To be edited directly in the splitting script.
+
+**1) ignore: stop words**
 you can add words that should not be be part of the splitting analysis.
 
 
-**2) %dont_modify:** words for which certain operations are forbidden
+**2) dont_modify:** words for which certain operations are forbidden
 you can add words that look like other (non-related) words when a fugenelement is removed/added
 in the modifier position.
 
-(1) Removal of "s" or "n":
-    eis (ice) -> remove "s" -> ei (egg)
-    hain (grove) -> remove "n" -> hai (shark)
-(2) Adding "e":
-    reis (rice) -> add "e" -> reise (voyage)
+(1) Removal of "s" or "n": \
+    eis (ice) -> remove "s" -> ei (egg) \
+    hain (grove) -> remove "n" -> hai (shark) \
+(2) Adding "e": \
+    reis (rice) -> add "e" -> reise (voyage) \
     nicht (not) -> add "e" -> nichte (niece)
 
 This list is not complete; some of the entries occur rather frequently, e.g. "nicht" (negation prefix).
