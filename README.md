@@ -15,11 +15,9 @@ perl compound_splitter_DE.perl input_file.txt > output_file.txt
 The input-file should look like this: \
 compound *tab* POS-tag (ADJ, NN, V) 
 
-x | y
----------------|----------
-Abfallkatalog  |  NN 
-Abfallmenge    |  NN 
-Abfallprodukte | NN 
+Abfallkatalog NN  \
+Abfallmenge  NN  \
+Abfallprodukte NN 
 
 (Either true-cased or lower-cased: the splitter will lowercase everything)
 
@@ -75,10 +73,12 @@ You need to set the correct path in line 34.
 
 ### 1) all_pos_freq.txt: frequency list
 
-schwankung      NN      336 
-mühle   NN      454 
-mobil   ADJ     749 
-kreisen	V	123
+Lemma | POS-tag | frequency
+------|---------|----------
+schwankung  |    NN   |   336 
+mühle |  NN  |    454  
+mobil |  ADJ   |  749 
+kreisen	 | V  |	123
 
 This list contains frequency information for lemmas.
 The format is: lemma *tab* POS-tag *tab* frequency.
@@ -91,14 +91,16 @@ can occur frequently due to typos or incorrect hyphenation and should be removed
 
 ### 2) all_pos_lem.txt: list of word forms and their respective lemma 
 
-schwankung      NN      schwankung
-schwankungen    NN      schwankung
-mobiles		ADJ	mobil
-mobiler		ADJ	mobil
-fledermäuse     NN      fledermaus
-anzeigen        V       anzeigen
-bücher  	NN      buch
-tüten		NN	tüte
+Word form | POS-tag | Lemma
+----------|---------|------
+schwankung   |   NN   |   schwankung
+schwankungen |   NN  |    schwankung
+mobiles	|	ADJ	| mobil
+mobiler	|	ADJ |	mobil
+fledermäuse |    NN  |     fledermaus
+anzeigen  |    V   |    anzeigen
+bücher  |	NN    |  buch
+tüten	|	NN	| tüte
 
 This list maps word forms to their lemma.
 The format is: word *tab* POS-tag *tab* lemma.
