@@ -34,12 +34,14 @@ compound *tab* split compound (all lemmatized) *tab* split compound (inflected h
 Compound | Analysis  (all components lemmatized) | Analysis (inflected head)
 |:----|:-------|:-------
 |breitflügelfledermäuse |  breit_ADJ flügel_NN fledermaus_NN  | breit_ADJ flügel_NN fledermäuse_NN 
-|breitflügelfledermaus   | breit_ADJ flügel_NN fledermaus_NN   | breit_ADJ flügel_NN fledermaus_NN
+|breitflügelfledermaus  | breit_ADJ flügel_NN fledermaus_NN   | breit_ADJ flügel_NN fledermaus_NN
 
-The first word (breitflügelfledermäuse) is the plural form; the splitter outputs a lemmatized analysis
-(breit_ADJ flügel_NN fledermaus_NN), as well as an analysis that keeps the inflected form of the head
-noun (breit_ADJ flügel_NN fledermäuse_NN); the modifiers are represented in lemmatized format.
-This can be useful, e.g. for applications in SMT, if you want to keep information such as number.
+The splitter provides two output variants: one analysis where all components are lemmatized, and a second one that
+keeps the inflected form of the head noun. This allows to preserve morphological information such as number, which can
+be useful in some applications (e.g. machine translation scenarios).
+
+In the example, the first word (*breitflügelfledermäuse*) is a plural form, resulting in the two analysis variants
+*breit_ADJ flügel_NN fledermaus_NN* (all lemmatized), as well as *breit_ADJ flügel_NN fledermäuse_NN* (the head noun remains inflected). For the second word (*breitflügelfledermaus*), a singular form, the analysis variants are identical.
 
 
 ### Options 
