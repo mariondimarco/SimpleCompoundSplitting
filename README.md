@@ -15,13 +15,14 @@ perl compound_splitter_DE.perl input_file.txt > output_file.txt
 The input-file should look like this: \
 compound *tab* POS-tag (ADJ, NN, V) 
 
-Abfallkatalog   NN \
-Abfallmenge     NN \
-Abfallprodukte  NN 
+---------------|----------
+Abfallkatalog  |  NN 
+Abfallmenge    |  NN 
+Abfallprodukte | NN 
 
 (Either true-cased or lower-cased: the splitter will lowercase everything)
 
-You need two word lists (frequency information and wordform-lemma mapping) as training data;
+You need two word lists (frequency information and wordform-lemma mapping) as training data; \
 see below for more details.
 
 
@@ -68,7 +69,7 @@ order to rate the different splitting analyses and to identify the best analysis
 
 ## Training data
 
-The splitter loads two lists: "all_pos_freq.txt" and "all_pos_lem.txt"
+The splitter loads two lists: "all_pos_freq.txt" and "all_pos_lem.txt". \
 You need to set the correct path in line 34.
 
 ### 1) all_pos_freq.txt: frequency list
