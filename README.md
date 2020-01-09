@@ -1,5 +1,9 @@
 # Simple Compound Splitting for German
 
+The script implements a simple method for German compound splitting that combines a basic frequency-based approach with a form-to-lemma mapping to approximate morphological operations.
+
+Have a look at my paper for more details:
+[Simple Compound splitting for German](https://www.aclweb.org/anthology/W17-1722/)
 
 ## Run the splitter
 
@@ -68,8 +72,7 @@ order to rate the different splitting analyses and to identify the best analysis
 The splitter loads two lists: "all_pos_freq.txt" and "all_pos_lem.txt"
 You need to set the correct path in line 34.
 
-
-1) all_pos_freq.txt: frequency list
+### 1) all_pos_freq.txt: frequency list
 
 schwankung      NN      336
 mühle   NN      454
@@ -85,8 +88,7 @@ but observed words.
 In particular, short strings that are not a real words or morphologically meaningful entities
 can occur frequently due to typos or incorrect hyphenation and should be removed from this list.
 
-
-2) all_pos_lem.txt: list of word forms and their respective lemma 
+### 2) all_pos_lem.txt: list of word forms and their respective lemma 
 
 schwankung      NN      schwankung
 schwankungen    NN      schwankung
@@ -113,7 +115,7 @@ tütensuppe -> tüte suppe (lit. bag soup: packet soup)
 
 Both lists should be as large and clean as possible.
 
-
+## Additional options
 
 1) %ignore: stop words
 you can add words that should not be be part of the splitting analysis.
