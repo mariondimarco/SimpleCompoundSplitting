@@ -131,12 +131,13 @@ you can add words that should not be be part of the splitting analysis.
 you can add words that look like other (non-related) words when a fugenelement is removed/added
 in the modifier position.
 
-(1) Removal of "s" or "n": \
-    eis (ice) -> remove "s" -> ei (egg) \
-    hain (grove) -> remove "n" -> hai (shark) \
-(2) Adding "e": \
-    reis (rice) -> add "e" -> reise (voyage) \
-    nicht (not) -> add "e" -> nichte (niece)
+* Removal of "s" or "n": \
+  **  eis (ice) -> remove "s" -> ei (egg) \
+  **  hain (grove) -> remove "n" -> hai (shark) 
+
+* Adding "e": \
+  **  reis (rice) -> add "e" -> reise (voyage) \
+  **  nicht (not) -> add "e" -> nichte (niece)
 
 This list is not complete; some of the entries occur rather frequently, e.g. "nicht" (negation prefix).
 
