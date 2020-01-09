@@ -132,8 +132,8 @@ you can add words that look like other (non-related) words when a fugenelement i
 in the modifier position.
 
 * Removal of "s" or "n": \
-  **  eis (ice) -> remove "s" -> ei (egg) \
-  **  hain (grove) -> remove "n" -> hai (shark) 
+  : eis (ice) -> remove "s" -> ei (egg) \
+  : hain (grove) -> remove "n" -> hai (shark) 
 
 * Adding "e": \
   **  reis (rice) -> add "e" -> reise (voyage) \
