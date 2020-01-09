@@ -125,10 +125,10 @@ Both lists should be as large and clean as possible.
 
 To be edited directly in the splitting script.
 
-**1) ignore stop words:** you can add words that should not be be part of the splitting analysis.
+**1) ignore** stop words\ you can add words that should not be be part of the splitting analysis.
 
 
-**2) dont_modify:** words for which certain operations are forbidden
+**2) dont_modify:** words for which certain operations are forbidden \
 you can add words that look like other (non-related) words when a fugenelement is removed/added
 in the modifier position.
 
