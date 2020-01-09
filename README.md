@@ -5,7 +5,7 @@ The script implements a simple method for German compound splitting that combine
 Have a look at my paper for more details:
 [Simple Compound splitting for German (2017)](https://www.aclweb.org/anthology/W17-1722/)
 
-## Run the splitter
+## How to run the splitter
 
 The splitter is started as follows:
 perl compound_splitter_DE.perl input_file.txt > output_file.txt
@@ -71,6 +71,8 @@ order to rate the different splitting analyses and to identify the best analysis
 The splitter loads two lists: "all_pos_freq.txt" and "all_pos_lem.txt". \
 You need to set the correct path in line 34.
 
+To prepare these lists, you need to first POS-tag and lemmatize your training data and then derive the relevant frequencies and word-lemma mappings.
+
 ### 1) all_pos_freq.txt: frequency list
 
 Lemma | POS-tag | frequency
@@ -87,7 +89,7 @@ All words occurring in this list are considered as potential components in the s
 It helps to keep this list as clean as possible to avoid missplittings based on non-valid,
 but observed words.
 In particular, short strings that are not a real words or morphologically meaningful entities
-can occur frequently due to typos or incorrect hyphenation and should be removed from this list.
+can occur frequently due to typos or incorrect hyphenation and it can help to remove such items.
 
 ### 2) all_pos_lem.txt: list of word forms and their respective lemma 
 
@@ -115,16 +117,15 @@ In contrast, the word "tüte" keeps the umlaut in the lemma.
 bücherregal -> buch regal (book shelf)
 tütensuppe -> tüte suppe (lit. bag soup: packet soup)
 
-
 Both lists should be as large and clean as possible.
 
 ## Additional options
 
-1) %ignore: stop words
+**1) %ignore: stop words**
 you can add words that should not be be part of the splitting analysis.
 
 
-2) %dont_modify: words for which certain operations are forbidden
+**2) %dont_modify:** words for which certain operations are forbidden
 you can add words that look like other (non-related) words when a fugenelement is removed/added
 in the modifier position.
 
