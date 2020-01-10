@@ -118,7 +118,7 @@ Also, it is used to model phenomena like "Umlautung" where the modifier contains
 ('ü' in 'bücher'), whereas the lemma does not contain an umlaut ('u' in 'buch').
 In contrast, the word "tüte" keeps the umlaut in the lemma.
 
-bücherregal -> buch regal (book shelf)
+bücherregal -> buch regal (book shelf) \
 tütensuppe -> tüte suppe (lit. bag soup: packet soup)
 
 Both lists should be as large and clean as possible.
